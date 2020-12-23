@@ -14,9 +14,9 @@ html{
     --white-text-color: #ffffff; 
     --black-text-color: #000000;
 
-    --main-bgc-color: #FFFFFF;
-    --secondary-bgc-color: #f5f4fa;
-    --dark-bgc-color: #2f303a; 
+    --main-bgc: #FFFFFF;
+    --secondary-bgc: #f5f4fa;
+    --dark-bgc: #2f303a; 
     --hero-bgc: #c4c4c4;
 
     --accent-color: #2196f3;  
@@ -24,7 +24,7 @@ html{
 /* стили для body */
 body {
     margin: 0;
-    background-color: var(--main-bgc-color);
+    background-color: var(--main-bgc);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
 }
@@ -34,7 +34,7 @@ header{
 }
 
 .header.line{
-    border-bottom: 2px solid var(--secondary-bgc-color);
+    border-bottom: 2px solid var(--secondary-bgc);
 }
 
 .link{
@@ -144,12 +144,25 @@ header{
 /*------------ main*/
 /* стили для hero*/
 .hero{
-    /* outline: 3px solid tomato; */
     padding: 200px 0;
-    background-color: var(--dark-bgc-color);
+    /* background-color: var(--dark-bgc); */
     letter-spacing: 0.06em;
     text-align: center;
 }
+.hero.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--hero-bgc);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url(../images/hero-o.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 .hero-title {
     width: 696px;
     margin: 0 auto 30px;
@@ -208,7 +221,7 @@ header{
     margin-right: 30px;
 }
 .section.team{
-    background-color: var(--secondary-bgc-color);
+    background-color: var(--secondary-bgc);
 }
 
 .advantages .title{
@@ -286,7 +299,7 @@ header{
 /*-------------footer*/
 footer{
     padding: 60px 0px;
-    background-color: var(--dark-bgc-color);
+    background-color: var(--dark-bgc);
 }
 
 .logo-footer{
@@ -346,7 +359,7 @@ footer{
     border-radius: 4px;
     border-color: transparent;
     color: var(--secondary-text-color);
-    background-color: var(--secondary-bgc-color);
+    background-color: var(--secondary-bgc);
 
     font-family: inherit;
     font-weight: 500;
