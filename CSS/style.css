@@ -19,7 +19,9 @@ html{
     --dark-bgc: #2f303a; 
     --hero-bgc: #c4c4c4;
 
-    --accent-color: #2196f3;  
+    --accent-color: #2196f3;
+    --border-color: #afb1bb;
+
 }
 /* стили для body */
 body {
@@ -224,6 +226,8 @@ header{
     background-color: var(--secondary-bgc);
 }
 
+/* сильные стороны */
+
 .advantages .title{
     color: var(--secondary-text-color);
     margin-top: 0px;
@@ -233,6 +237,13 @@ header{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+.thumb{
+    width: 270px;
+    height: 120px;
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bgc);
 }
 
 .advantages p{
@@ -296,6 +307,28 @@ header{
     line-height: 1.19;
     text-align: center;
     }
+
+/* постоянные клиенты */
+.client.list{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.client-link{
+    height: 90px;
+    width: 170px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px
+}
+.client-link:not(:last-child){
+    margin-right: 30px;
+}
+
+.client-link:hover,
+.client-link:focus{
+    border: 1px solid var(--accent-color);
+}
+
 /*-------------footer*/
 footer{
     padding: 60px 0px;
