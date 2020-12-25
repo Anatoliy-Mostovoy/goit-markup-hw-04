@@ -1,0 +1,48 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-cmp-1-o {
+  width: 0.900390625em;
+}
+
+.icon-cmp-2-o {
+  width: 0.76953125em;
+}
+
+.icon-cmp-3-o {
+  width: 0.953125em;
+}
+
+.icon-cmp-4-o {
+  width: 1.8603515625em;
+}
+
+.icon-cmp-5-o {
+  width: 1.2548828125em;
+}
+
+.icon-cmp-6-o {
+  width: 1.9345703125em;
+}
+
+.icon-email-o {
+  width: 1.3330078125em;
+}
+
+.icon-phone-o {
+  width: 0.625em;
+}
