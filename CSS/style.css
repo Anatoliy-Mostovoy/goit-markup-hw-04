@@ -238,6 +238,7 @@ header{
     line-height: 1.14;
     text-transform: uppercase;
 }
+
 .thumb{
     display:flex;
     justify-content: center;
@@ -321,20 +322,31 @@ header{
     justify-content: center;
     margin: 0;
 }
-.client-link{
+
+.client-link>.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     width: 170px;
     border: 1px solid var(--border-color);
-    border-radius: 4px
+    border-radius: 4px;
+    color: var(--border-color);
 }
+
 .client-link:not(:last-child){
     margin-right: 30px;
 }
 
-.client-link:hover,
-.client-link:focus{
+.company-logo{
+    fill: currentColor;
+}
+
+.client-link>.link:hover,
+.client-link>.link:focus{
     border: 1px solid var(--accent-color);
     cursor: pointer;
+    color: var(--accent-color);
 }
 
 /*-------------footer*/
