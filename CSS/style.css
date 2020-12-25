@@ -18,6 +18,7 @@ html{
     --secondary-bgc: #f5f4fa;
     --dark-bgc: #2f303a; 
     --hero-bgc: #c4c4c4;
+    
 
     --accent-color: #2196f3;
     --border-color: #afb1bb;
@@ -141,7 +142,6 @@ header{
     fill: var(--primary-text-color);
 }
 .header-logo{
-
     margin:0;
     margin-right: 10px;
 }
@@ -317,13 +317,43 @@ header{
 }
 .employer .text{
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    }
+}
+
+.social-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-items:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: var(--border-color);
+    
+
+}
+
+.social-link:hover{
+    background-color: var(--accent-color);
+    fill: var(--main-bgc);
+}
+
+
 
 /* постоянные клиенты */
 .client.list{
