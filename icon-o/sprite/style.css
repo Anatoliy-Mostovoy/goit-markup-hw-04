@@ -15,34 +15,34 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.cmp-1 {
+.cmp-1-o {
   width: 0.900390625em;
 }
 
-.cmp-2 {
+.cmp-2-o {
   width: 0.76953125em;
 }
 
-.cmp-3 {
-  width: 0.953125em;
-}
-
-.cmp-4 {
-  width: 1.8603515625em;
-}
-
-.cmp-5 {
-  width: 1.2548828125em;
-}
-
-.cmp-6 {
+.cmp-6-o {
   width: 1.9345703125em;
 }
 
-.email {
+.cmp-5-o {
+  width: 1.2548828125em;
+}
+
+.cmp-4-o {
+  width: 1.8603515625em;
+}
+
+.cmp-3-o {
+  width: 0.953125em;
+}
+
+.email-o {
   width: 1.3330078125em;
 }
 
-.phone {
+.phone-o {
   width: 0.625em;
 }
