@@ -344,8 +344,6 @@ header{
     width: 44px;
     height: 44px;
     fill: var(--border-color);
-    
-
 }
 
 .social-link:hover{
@@ -393,7 +391,21 @@ footer{
     padding: 60px 0px;
     background-color: var(--dark-bgc);
 }
-
+.footer-adress{
+    margin-right:70px;
+}
+.footer-text{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
 .logo-footer{
     display: inline-block;
     margin-bottom: 20px;
@@ -432,6 +444,36 @@ footer{
 .adress-footer:hover{
     color: var(--accent-color);
 }
+
+.container.footer{
+    display: flex;
+    align-items: center;
+}
+
+.social-footer.list{
+    display: flex;
+}
+
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    fill: var(--white-text-color);
+}
+
+.:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+    background-color: var(--accent-color);
+}
+
 
 /* Страница портфолио*/
 /* Кнопки */
@@ -477,7 +519,12 @@ footer{
     margin-right: 30px;
     margin-bottom: 30px;
 }
- 
+
+.rpoject-elements:hover,
+.rpoject-elements:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .rpoject-elements:nth-child(3n){
     margin-right: 0px;
 }
