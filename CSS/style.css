@@ -10,7 +10,7 @@ html{
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
 
-    --footer-text-color; rgba(255, 255, 255, 0.6);
+    --footer-text-color: rgba(255, 255, 255, 0.6);
     --white-text-color: #ffffff; 
     --black-text-color: #000000;
 
@@ -109,7 +109,8 @@ header{
     color: var(--accent-color)
 }
 
-.site-nav .link:hover{
+.site-nav .link:hover,
+.site-nav .link:focus{
     color: var(--accent-color);
 }
 
@@ -149,6 +150,7 @@ header{
 .adress-header:hover,
 .adress-header:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -346,7 +348,8 @@ header{
     fill: var(--border-color);
 }
 
-.social-link:hover{
+.social-link:hover,
+.social-link:focus{
     background-color: var(--accent-color);
     fill: var(--main-bgc);
 }
@@ -391,14 +394,16 @@ footer{
     padding: 60px 0px;
     background-color: var(--dark-bgc);
 }
+
 .footer-adress{
     margin-right:70px;
 }
+
 .footer-text{
     margin: 0;
     margin-bottom: 20px;
     font-family: Roboto;
-    font-style: normal
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -406,6 +411,8 @@ footer{
     text-transform: uppercase;
     color: var(--white-text-color);
 }
+
+
 .logo-footer{
     display: inline-block;
     margin-bottom: 20px;
@@ -465,18 +472,14 @@ footer{
     fill: var(--white-text-color);
 }
 
-.:not(:last-child){
-    margin-right: 10px;
-}
-
 .footer-link:hover,
 .footer-link:focus{
     background-color: var(--accent-color);
 }
 
-
 /* Страница портфолио*/
 /* Кнопки */
+
 .buttons{
     display: flex;
     justify-content:center;
@@ -503,8 +506,8 @@ footer{
     letter-spacing: 0.03em;
 }
 
-.button:hover, 
-.button:focus {
+.button:hover,
+.button:focus{
     color: var(--white-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -520,8 +523,12 @@ footer{
     margin-bottom: 30px;
 }
 
-.rpoject-elements:hover,
-.rpoject-elements:focus{
+.project-card{
+    display: block;
+}
+
+.project-card:focus,
+.project-card:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
